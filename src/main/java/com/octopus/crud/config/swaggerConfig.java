@@ -11,11 +11,15 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * Created by luqinglin on 2017/12/1.
+ *
+ *
+ * @author yuchu
+ * @email 
+ * @date 2018-04-26 17:12:51
  */
 @Configuration
 @EnableSwagger2
-public class Swaggers {
+public class swaggerConfig {
 
     /**
      * swagger配置
@@ -41,10 +45,10 @@ public class Swaggers {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot中使用Swagger2构建RESTful APIs")
-                .description("更多Spring Boot相关文章请关注：xxx")
-                .termsOfServiceUrl("http://xxx")
-                .contact("hahaha")
+                .title("Spring-boot-jdbcTemplate生成代码测试接口")
+                .description("更多crud代码生成器请关注：https://github.com/yuchu2016")
+                .termsOfServiceUrl("https://github.com/yuchu2016/springboot-jpa-generator")
+                .contact("yuchu")
                 .version("1.0")
                 .build();
     }
